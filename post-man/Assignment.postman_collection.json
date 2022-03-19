@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "31a68b19-e021-4053-8455-e6742e94b589",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CategoryApi",
+			"item": []
+		},
+		{
+			"name": "FoodApi",
+			"item": [
+				{
+					"name": "Get list street",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{domain}}/api/v1/streets",
+							"protocol": "http",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"streets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update street",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n        \"name\": \"Hoang Hoa Tham\",\r\n        \"ward\": \"Thanh Xuan\",\r\n        \"createdDate\": 1995,\r\n        \"description\": \"haha\",\r\n        \"status\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{domain}}/api/v1/streets/9",
+							"protocol": "http",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"streets",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detele street",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{domain}}/api/v1/streets/9",
+							"protocol": "http",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"streets",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail street",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{domain}}/api/v1/streets/1",
+							"protocol": "http",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"streets",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new street",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n        \"id\": 9,\r\n        \"name\": \"Nguyen Trai9\",\r\n        \"ward\": \"Thanh Xuan\",\r\n        \"createdDate\": 1995,\r\n        \"description\": \"haha9\",\r\n        \"status\": 1\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{domain}}/api/v1/streets",
+							"protocol": "http",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"streets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
